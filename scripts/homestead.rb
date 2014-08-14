@@ -62,5 +62,10 @@ class Homestead
         end
       end
     end
+
+    # Additional Setup (phpMyAdmin, Setting root password blank, etc...)
+    config.vm.provision "shell" do |s|
+      s.inline = "bash /vagrant/scripts/setup.sh"
+    end
   end
 end

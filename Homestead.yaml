@@ -13,6 +13,8 @@ folders:
       to: /home/vagrant/Code
 
 sites:
+    - map: db.dev
+      to: /usr/share/phpmyadmin
     - map: tm.dev
       to: /home/vagrant/Code/testmaster/public
 
