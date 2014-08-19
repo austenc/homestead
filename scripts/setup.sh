@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "-------- Reconfiguring Database --------\n"
+echo "-------- Reconfiguring Database --------"
 
 # Reset the mysql root user password to blank
 mysql -uroot -p"secret" -Bse "use mysql; UPDATE user SET password=PASSWORD('') WHERE User='root'; FLUSH PRIVILEGES;"
@@ -18,3 +18,6 @@ npm update -g npm
 
 # install bower
 npm install -g bower
+
+# phantomJS
+sudo apt-get install -y phantomjs
