@@ -11,12 +11,19 @@ keys:
 folders:
     - map: ~/Code
       to: /home/vagrant/Code
+    
+    - map: ~/Dropbox/Sites/
+      to: /home/vagrant/Sites
 
 sites:
     - map: db.dev
       to: /usr/share/phpmyadmin
+
     - map: tm.dev
       to: /home/vagrant/Code/testmaster/public
+    
+    - map: ccl.dev
+      to: /home/vagrant/Sites/crystalcreeklodge.com
 
 variables:
     - key: APP_ENV
